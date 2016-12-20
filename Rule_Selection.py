@@ -7,7 +7,6 @@ from ssf_api import *
 from os import listdir
 from os.path import isfile, join
 from Phrases import *
-from SType_Definitions import *
 from operator import itemgetter
 import string
 
@@ -40,7 +39,6 @@ class Rule_selection(object):
                 SYM="[.SYM"+sym_term+" ]"
             
         S = ''
-        stype=S_Type(self.tree)
         Arg0=''
         all_frag=''
         ordered_fragments=sorted(all_dict_frag.items(), key=itemgetter(1))
